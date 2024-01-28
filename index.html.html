@@ -1,0 +1,203 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body>
+<body bgcolor=#3CB371>
+
+		<div class="w3-container">
+		<div w3-container>
+    <img src="D:\Tuags Besar Programan\css\zoo3.png">
+	
+</div>
+	 
+	
+		</div>
+	</div>
+			<div class="w3-bar w3-black">
+				<button class="w3-bar-item w3-button" onclick="openKota('Hewan Darat')">Hewan Darat</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Hewan Laut')">Hewan Laut</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Hewan Udara')">Hewan Udara</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Profil')">Profil</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>	
+			</div>	
+	
+	<div id="Hewan Darat" class="w3-container kota w3-animate-zoom" style="display:none"> 
+	<h2>JENIS-JENIS</h2> 
+				<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:100px">
+				<h5 class="w3-bar-item">Pilihan</h5>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event,
+																'singa')">Karnivora</button>
+				
+			<button class="w3-bar-item w3-button tablink" onclick="openCity(event,
+																'panda')">Herbivora</button>
+ 
+				<button class="w3-bar-item w3-button tablink" onclick="openCity(event,
+																'kucing')">Omnivora </button>
+ 
+				</div>
+		<div style="margin-left:130px">
+			<div class="w3-padding">Daftar Hewan Yang Ada</div>
+ 
+ <div id="singa" class="w3-container city" style="display:none">
+	<h2>SINGA DAN HARIMAU</h2>
+		<p>Jika Anda Mau Tau Tentang Hewan Ini
+		   Klik Tulisan Singa Atau Harimau Yang Ada Di Bawah Gambar Ini</p>
+		<img src="css\singa.jpeg" width=300 height=250> 
+		<img src="css\harimau.jpeg" width=300 height=250>
+		
+<center>
+	<h1>
+<hr>
+	<a href="singa.html">SINGA<a/>
+	<a href="harimau.html">HARIMAU</a>
+</center>
+ </div>
+ 
+ 
+ <div id="panda" class="w3-container city" style="display:none">
+	<h2>PANDA KELINCI DAN JERAPA </h2>
+	<p>Jika Anda Mau Tau Tentang Hewan Ini
+		   Klik Tulisan Panda Kelinci Dan Jerapa Yang Ada Di Bawah Gambar Ini</p>
+
+		<img src="css\panda.jpg" width=300 height=250>
+		<img src="css\kelinci.jpeg" width=300 height=250>
+		<img src="css\jerapah.jpeg" width=300 height=250>
+<center>
+	<h1>
+<hr>
+	<a href="panda.html">PANDA<a/>		
+	<a href="kelinci.html">KELINCI</a>
+	<a href="jerapa.html">JERAPA</a>
+ </div>
+ 
+
+ <div id="kucing" class="w3-container city" style="display:none">
+	<h2>KUCING DAN TUPAI</h2>
+		<p>Jika Anda Mau Tau Tentang Hewan Ini
+		   Klik Tulisan Kucing Dan Tupai Yang Ada Di Bawah Gambar Ini</p>
+		<img src="css\kucing.jpeg" width=300 height=250>
+		<img src="css\tupai.jpg" width=300 height=250>
+ 
+ <center>
+	<h1>
+<hr>
+	<a href="kucing.html">KUCING<a/>		
+	<a href="tupai.html">TUPAI</a>
+ 
+ </div>
+ 
+		</div>
+
+						<script>
+				function openCity(evt, cityName) {
+							var i, x, tablinks;
+							x = document.getElementsByClassName("city");
+										for (i = 0; i < x.length; i++) {
+											x[i].style.display = "none";
+						}
+					tablinks = document.getElementsByClassName("tablink");
+										for (i = 0; i < x.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+						}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " w3-green";
+						}
+						</script>
+		</p>
+</div>
+		
+			<div id="Hewan Laut" class="w3-container kota" style="display:none"> 
+			<h2>TERDAPAT MACAM-MACAM JENIS IKAN</h2>
+				<p>Jika Anda Mau Tau Tentang Hewan Ini
+					Klik Tulisan Yang Ada Di Bawah Gambar Ikan</p>
+			<img src="css\paus.jpeg" width=300 height=250>
+			<img src="css\kudalaut.jpeg" width=300 height=250>
+			<img src="css\kura2.jpeg" width=300 height=250>
+			<img src="css\ubur2.jpeg" width=300 height=250>
+			
+	 <center>
+	<h1>
+<hr>
+	<a href="paus.html">PAUS<a/>
+	<a href="kudalaut.html">KUDALAUT<a/>
+	<a href="kura2">KURA2<a/>
+	<a href="ubur2">UBUR2<a/>
+	
+			
+	</div>
+	
+			<div id="Hewan Udara" class="w3-container kota" style="display:none"> 
+			<h2>MACAM-MACAM JENIS BURUNG</h2>
+				<p>Jika Anda Mau Tau Tentang Hewan Ini
+					Klik Tulisan Yang Ada Di Bawah Gambar Burung Ini</p>
+					
+				<img src="css\burunghantu.jpeg"width=300 height=250>
+				<img src="css\capung.jpeg"width=300 height=250>
+				<img src="css\elang.jpeg"width=300 height=250>
+				
+		 <center>
+	<h1>
+<hr>
+	<a href="burunghantu.html">BURUNGHANTU<a/>
+	<a href="capung.html">CAPUNG</a>
+	<a href="elang.html">ELANG</a>
+
+</div>	
+	
+	<div id="Profil" class="w3-container kota" style="display:none"> 
+			<h1>
+<center>
+
+<h1>IDENTITAS SAYA
+<hr>
+<table border=10>
+  <tr bgcolor=white><th width=50>NAMA<th width=250>NIM<th width=250>Alamat<th width=150>Kontak
+  <tr bgcolor=white><td>MUHAMMAD FAIZ ARIE TITO<td>10123178<td>faiztito04@gmail.com
+													<td>081223230656
+  </table>
+  
+  <img src="css\tito.jpg" width=300 height=450> 			
+	</div>
+	
+			<div id="Home" class="w3-container kota" style="display:none"> 
+			<h2>Tentang Hewan Atau Kebun Binatang</h2>
+				<h3>KEBUN BINATANG</h3>
+	<p>Kebun binatang atau taman margasatwa adalah tempat hewan dipelihara dalam lingkungan buatan,
+		dan dipertunjukkan kepada publik. Selain sebagai tempat rekreasi, kebun binatang berfungsi sebagai tempat pendidikan,
+			riset, dan tempat konservasi untuk satwa terancam punah. Binatang yang dipelihara di kebun binatang sebagian besar adalah hewan yang hidup di darat, 
+				sedangkan satwa air dipelihara di akuarium.</p>
+				
+	<p>Kebun binatang yang memungkinkan pengunjung masuk dengan mobil atau bus disebut taman safari. 
+		Binatang dilepas di kawasan luas dan terbuka, serta tidak dikurung di kandang-kandang sempit, melainkan dibatasi dengan pagar atau parit. 
+			Kebun binatang sering dilengkapi dengan kebun binatang anak untuk mempertontonkan hewan ternak atau spesies satwa liar yang belum dewasa 
+				dan jinak untuk dipegang-pegang atau diberi makan, termasuk oleh anak-anak.
+					Ada pula taman bermain yang bertemakan hewan, misalnya SeaWorld dan Disney's Animal Kingdom.</p>
+					
+	<p>Kebun binatang berawal dari kandang-kandang berisi koleksi hewan liar yang disebut menagerie. 
+		Pada abad ke-2 SM, Maharani Tanki dari Cina membangun "rumah untuk rusa", 
+			dan Raja Wen dari Zhou memiliki kebun binatang Ling-Yu atau Taman Kecerdasan seluas 600 hektare. 
+				Di antara tokoh terkenal yang juga kolektor binatang adalah Raja Solomon dari Kerajaan Israel dan Yehuda Bersatu,
+					Raja Semirami and Ashurbanipal dari Assyria, dan Raja Nebukadnezar dari Babilonia.
+						Pada abad ke-4 SM, hampir semua kota-kota besar di Yunani memiliki kebun binatang. 
+							Sewaktu melakukan ekspedisi militer, Alexander Agung diketahui sering mengirimkan binatang-binatang yang ditemuinya ke Yunani. 
+								Kaisar-kaisar Romawi memiliki koleksi hewan pribadi untuk penelitian sekaligus diadu di arena.
+									Pada abad ke-19, sejarawan W.E.H.
+										Lecky menulis tentang perayaan adu hewan ala Romawi yang pertama diadakan tahun 366 SM</p>
+	<img src="css\kebungajah.jpg"width=300 height=250>
+	
+	</div>
+	
+	
+	<script> 
+	function openKota(namakota) { 
+		var i; 
+		var x = document.getElementsByClassName("kota"); 
+		for (i = 0; i < x.length; i++) { 
+			x[i].style.display = "none"; 
+			} 
+			document.getElementById(namakota).style.display = "block"; 
+			} 
+		</script> 
+	</body> 
+</html>
